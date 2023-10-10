@@ -8,7 +8,7 @@ import setSockets from './sockets/index.js';
 mongoConnect();
 
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 80800;
 
 // HTTP Server
 const httpServer = app.listen(PORT, () => {
